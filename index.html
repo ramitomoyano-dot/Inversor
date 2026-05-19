@@ -28,10 +28,10 @@ body::before{content:'';position:fixed;inset:0;background:
   radial-gradient(ellipse 50% 40% at 95% 90%,rgba(0,255,157,0.04) 0%,transparent 50%),
   radial-gradient(ellipse 40% 30% at 5% 70%,rgba(0,100,200,0.04) 0%,transparent 50%);
 pointer-events:none;z-index:0;}
-
+ 
 /* ─── LAYOUT ─── */
 #app{position:relative;z-index:1;display:flex;flex-direction:column;min-height:100vh;}
-
+ 
 /* ─── HEADER ─── */
 .header{
   position:sticky;top:0;z-index:200;
@@ -51,7 +51,7 @@ pointer-events:none;z-index:0;}
   background:linear-gradient(90deg,var(--cyan),var(--green));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .logo-sub{font-size:9px;color:var(--muted);margin-top:-3px;letter-spacing:.05em;}
-
+ 
 /* ─── NAV TABS ─── */
 .nav{display:flex;gap:2px;}
 .nav-btn{
@@ -62,10 +62,10 @@ pointer-events:none;z-index:0;}
 }
 .nav-btn:hover{color:var(--text);border-color:var(--border);}
 .nav-btn.active{background:var(--s2);color:var(--cyan);border-color:var(--border2);}
-
+ 
 /* ─── MAIN ─── */
 .main{flex:1;max-width:860px;margin:0 auto;width:100%;padding:20px 14px 40px;}
-
+ 
 /* ─── API KEY BANNER ─── */
 .api-banner{
   background:linear-gradient(135deg,rgba(0,212,255,0.08),rgba(0,255,157,0.05));
@@ -95,7 +95,7 @@ pointer-events:none;z-index:0;}
 .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
 .dot.ok{background:var(--ok);box-shadow:0 0 6px var(--ok);}
 .dot.warn{background:var(--warn);box-shadow:0 0 6px var(--warn);}
-
+ 
 /* ─── HERO ─── */
 .hero{
   text-align:center;padding:44px 20px 36px;
@@ -113,7 +113,7 @@ pointer-events:none;z-index:0;}
 .badge{padding:3px 11px;border-radius:20px;border:1px solid var(--border2);
   font-size:11px;color:var(--muted);background:var(--s2);}
 .badge b{color:var(--text);font-weight:500;}
-
+ 
 /* ─── BUTTONS ─── */
 .btn-main{
   display:inline-flex;align-items:center;gap:8px;
@@ -135,7 +135,7 @@ pointer-events:none;z-index:0;}
 .btn-sec:hover{border-color:var(--cyan);color:var(--cyan);}
 .btn-danger{border-color:rgba(255,61,90,.3);color:var(--danger);}
 .btn-danger:hover{border-color:var(--danger);background:rgba(255,61,90,.08);}
-
+ 
 /* ─── REPORT STREAM ─── */
 .report-wrap{background:var(--s1);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
 .report-topbar{
@@ -159,11 +159,11 @@ pointer-events:none;z-index:0;}
 .report-body td{padding:7px 10px;border:1px solid var(--border);vertical-align:top;}
 .report-body tr:nth-child(even) td{background:rgba(255,255,255,.01);}
 .report-body blockquote{border-left:3px solid var(--orange);padding:8px 14px;background:rgba(255,107,53,.05);border-radius:0 7px 7px 0;margin:10px 0;}
-
+ 
 /* ─── STREAMING CURSOR ─── */
 .cursor{display:inline-block;width:2px;height:13px;background:var(--cyan);margin-left:2px;vertical-align:middle;animation:blink .7s infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-
+ 
 /* ─── ALERT CARDS ─── */
 .alerts-grid{display:flex;flex-direction:column;gap:10px;}
 .alert-card{
@@ -177,7 +177,7 @@ pointer-events:none;z-index:0;}
 .alert-body strong{font-family:var(--font-head);font-size:13px;color:var(--text);}
 .alert-body p{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5;}
 .alert-time{font-family:var(--font-mono);font-size:10px;color:var(--dim);margin-top:4px;}
-
+ 
 /* ─── CHAT ─── */
 .chat-outer{display:flex;flex-direction:column;height:calc(100vh - 160px);min-height:400px;}
 .chat-msgs{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:14px;padding:16px;
@@ -203,7 +203,7 @@ pointer-events:none;z-index:0;}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
 .chip{padding:5px 12px;border-radius:18px;font-size:11px;cursor:pointer;border:1px solid var(--border);color:var(--muted);background:var(--s1);transition:all .18s;}
 .chip:hover{border-color:var(--cyan);color:var(--cyan);}
-
+ 
 /* ─── HISTORY ─── */
 .h-list{display:flex;flex-direction:column;gap:10px;}
 .h-card{background:var(--s1);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
@@ -219,7 +219,7 @@ pointer-events:none;z-index:0;}
 .h-body th{background:var(--s3);color:var(--cyan);padding:5px 8px;border:1px solid var(--border);white-space:nowrap;}
 .h-body td{padding:5px 8px;border:1px solid var(--border);}
 .h-body ul{padding-left:14px;}.h-body li{margin-bottom:2px;}
-
+ 
 /* ─── MISC ─── */
 .empty{text-align:center;padding:50px 20px;color:var(--muted);}
 .empty .ei{font-size:38px;margin-bottom:10px;}
@@ -231,11 +231,11 @@ pointer-events:none;z-index:0;}
 .ts{font-family:var(--font-mono);font-size:10px;color:var(--muted);}
 .divider{height:1px;background:var(--border);margin:18px 0;}
 .section-title{font-family:var(--font-head);font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px;}
-
+ 
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .fade-in{animation:fadeIn .3s ease both;}
-
+ 
 ::-webkit-scrollbar{width:4px;height:4px;}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
@@ -243,7 +243,7 @@ pointer-events:none;z-index:0;}
 </head>
 <body>
 <div id="app"></div>
-
+ 
 <script>
 // ─── STATE ────────────────────────────────────────────────────────────────────
 const S = {
@@ -261,40 +261,75 @@ const S = {
   chatLoading: false,
   openHistory: null,
 };
-
+ 
 // ─── SYSTEM PROMPT ────────────────────────────────────────────────────────────
-const SYSTEM = `Sos "InversorAR", un analista financiero experto en el mercado argentino.
-
+const SYSTEM = `Sos "InversorAR", un asesor financiero personal experto en el mercado argentino. No sos un informador — sos un asesor que le dice exactamente qué hacer y cuánto va a ganar.
+ 
 PERFIL DEL USUARIO:
-- Inversor moderado con $1M a $10M ARS para invertir
-- Busca balance entre rendimiento y preservación de capital
+- Inversor moderado con $1M a $10M ARS disponibles
+- Quiere saber exactamente qué comprar, qué vender y cuánto va a ganar
 - Horizonte corto-mediano plazo (días a meses)
-
-EN CADA ANÁLISIS DIARIO:
-1. Buscá cotizaciones ACTUALIZADAS de: dólar oficial, blue, MEP, CCL, cripto (USDT), tarjeta
-2. Calculá brechas e identificá oportunidades de arbitraje (neto de comisiones)
-3. Analizá 3-5 acciones del Merval con mayor oportunidad
-4. Analizá 2-3 CEDEARs (dólar implícito vs CCL)
-5. Analizá curva de bonos soberanos (AL30, GD30)
-6. Comparar LECAPs/BONCAPs/CER y TNA vs inflación
-7. Presentá 3-5 oportunidades concretas con: instrumento, tipo op., entrada, objetivo, horizonte, riesgo, stop loss
-8. Listá 2-3 riesgos o factores adversos del día
-
-FORMATO: Markdown con emojis. Español argentino. Números específicos con precios reales.`;
-
-const ANALYSIS_PROMPT = () => `Generá el análisis completo del mercado argentino para hoy (${new Date().toLocaleDateString('es-AR')}). 
-
-Usá este formato en Markdown:
-
-# 📊 RESUMEN EJECUTIVO
-# 💵 TIPOS DE DÓLAR HOY — cotizaciones + brechas + mejor oportunidad de arbitraje paso a paso
-# 📈 ACCIONES DESTACADAS — 3 a 5 acciones con tendencia, soporte/resistencia, recomendación
-# 🏦 CEDEARs — 2 a 3 con dólar implícito vs CCL, si están baratos o caros vs Wall Street
-# 📋 BONOS SOBERANOS — AL30 y GD30: paridad, TIR, recomendación
-# 💰 TASA EN PESOS — mejores LECAPs/BONCAPs/CER hoy con TNA vs inflación proyectada
-# 🎯 OPORTUNIDADES CONCRETAS — tabla con instrumento, tipo, entrada, objetivo, horizonte, riesgo, stop loss
-# ⚠️ RIESGOS DEL DÍA — 2 a 3 factores adversos a monitorear`;
-
+ 
+REGLAS DE ORO — SIEMPRE SEGUIRLAS:
+1. Hablá directo: "Te recomiendo comprar X", "Conviene vender Y", "Evitá Z hoy por esto"
+2. Calculá siempre la ganancia NETA en pesos Y en % descontando comisiones reales
+3. Simulá con $1.000.000, $3.000.000 y $5.000.000 ARS cuánto se gana en cada operación
+4. Nunca des información sin una recomendación concreta al final
+5. Indicá siempre: 🟢 EJECUTAR AHORA / 🟡 ESPERAR / 🔴 EVITAR HOY con justificación
+6. Para arbitraje: explicá paso a paso qué app abrir, qué tocar, en qué orden
+ 
+PARA ARBITRAJE DE DÓLARES:
+- Fórmula: (precio venta - precio compra - comisiones - impuestos) = ganancia neta por USD
+- Comisiones reales a descontar: MEP ~0.5% cada punta, cripto exchanges 1-2%, spread bancario
+- Ejemplo de formato:
+  💵 Arbitraje MEP → Blue
+  Compra MEP: $X | Venta Blue: $Y | Comisión: $Z | Ganancia neta: $W por USD (N%)
+  Con $1.000.000 ARS comprás ~U USD → ganancia neta: $G ARS
+  Con $3.000.000 ARS → ganancia neta: $G2 ARS
+  Tiempo de ejecución: 24-48hs (por parking)
+  🟢 EJECUTAR AHORA — brecha suficiente para cubrir costos
+ 
+PARA ACCIONES Y CEDEARS:
+- Formato: "Comprá X a $Y, objetivo $Z en W días = +N% = $G pesos por papel"
+- Cuántos papeles con $1M, $3M, $5M y ganancia total de cada caso
+- Stop loss obligatorio: "Si cae a $X salí sin dudar, pérdida máxima $N"
+- Ranking de las 3 mejores del día por retorno esperado neto
+ 
+PARA BONOS Y TASA EN PESOS:
+- "La LECAP X rinde 4.2% mensual vs inflación 3.5% = ganancia real +0.7% mensual"
+- "Con $1.000.000 en 30 días ganás $42.000 nominales / $7.000 reales"
+ 
+FORMATO: Markdown con emojis. Español argentino directo. Números con puntos: $1.250.000. Sé concreto y accionable.`;
+ 
+const ANALYSIS_PROMPT = () => `Sos mi asesor financiero personal. Hoy es ${new Date().toLocaleDateString('es-AR')}. Analizá el mercado argentino y decime exactamente qué hacer hoy.
+ 
+Buscá datos actualizados con web search y seguí este formato:
+ 
+# 📊 RESUMEN EJECUTIVO — qué hacer hoy en 3 líneas, directo al punto
+ 
+# 💵 ARBITRAJE DE DÓLARES — CALCULADORA
+Para cada oportunidad de arbitraje mostrá:
+- Cotizaciones actualizadas de: oficial, blue, MEP, CCL, cripto USDT
+- Cálculo exacto: precio compra → precio venta → comisiones → ganancia neta por USD
+- Simulación: con $1.000.000 / $3.000.000 / $5.000.000 ARS cuánto ganás
+- Tiempo de ejecución y pasos concretos
+- Semáforo: 🟢 EJECUTAR / 🟡 ESPERAR / 🔴 EVITAR
+ 
+# 📈 TOP 3 ACCIONES DEL DÍA — ranking por retorno esperado
+Para cada una: precio actual → objetivo → stop loss → ganancia con $1M/$3M/$5M → recomendación
+ 
+# 🏦 TOP 2 CEDEARs — dólar implícito vs CCL, si conviene comprar o esperar
+ 
+# 📋 BONOS — AL30 y GD30: ¿conviene entrar hoy? TIR, precio, recomendación concreta
+ 
+# 💰 MEJOR TASA EN PESOS HOY — ranking de LECAPs/BONCAPs/CER
+Cuál elegir y cuánto ganás con $1M en 30 días (nominal y real vs inflación)
+ 
+# 🎯 MI RECOMENDACIÓN FINAL — top 3 operaciones del día ordenadas por rentabilidad neta
+| # | Operación | Capital sugerido | Ganancia estimada | Riesgo | Acción |
+ 
+# ⚠️ CUIDADO HOY — 2-3 riesgos concretos que podrían arruinar la operación`;
+ 
 const CHAT_SUGGESTIONS = [
   '¿Conviene comprar dólar MEP hoy?',
   '¿Cuál LECAP rinde más?',
@@ -303,7 +338,7 @@ const CHAT_SUGGESTIONS = [
   '¿Hay oportunidad en bancarios?',
   '¿Cómo está la brecha hoy?',
 ];
-
+ 
 // ─── MARKDOWN PARSER ──────────────────────────────────────────────────────────
 function md(text) {
   if (!text) return '';
@@ -328,12 +363,12 @@ function md(text) {
   text = text.replace(/\n{2,}/g, '</p><p>');
   return '<p>' + text + '</p>';
 }
-
+ 
 // ─── API CALL WITH STREAMING ──────────────────────────────────────────────────
 async function streamClaude(messages, onChunk, systemOverride) {
   const key = S.apiKey;
   if (!key) throw new Error('NO_KEY');
-
+ 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -351,16 +386,16 @@ async function streamClaude(messages, onChunk, systemOverride) {
       messages,
     }),
   });
-
+ 
   if (!res.ok) {
     const err = await res.text().catch(() => '');
     throw new Error(`API ${res.status}: ${err}`);
   }
-
+ 
   const reader = res.body.getReader();
   const dec = new TextDecoder();
   let buf = '', full = '';
-
+ 
   while (true) {
     const { done, value } = await reader.read();
     if (done) break;
@@ -382,13 +417,13 @@ async function streamClaude(messages, onChunk, systemOverride) {
   }
   return full;
 }
-
+ 
 // ─── EXTRACT ALERTS FROM REPORT ───────────────────────────────────────────────
 function extractAlerts(reportText) {
   const alerts = [];
   const now = new Date().toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' });
   const date = new Date().toLocaleDateString('es-AR');
-
+ 
   // Find RIESGOS section
   const riskMatch = reportText.match(/⚠️[^\n]*RIESGOS[^\n]*([\s\S]*?)(?=\n#|$)/i);
   if (riskMatch) {
@@ -398,7 +433,7 @@ function extractAlerts(reportText) {
       if (clean.length > 10) alerts.push({ type: 'high', icon: '⚠️', text: clean, time: `${date} ${now}` });
     });
   }
-
+ 
   // Find OPORTUNIDADES section
   const oppMatch = reportText.match(/🎯[^\n]*OPORTUNIDADES[^\n]*([\s\S]*?)(?=\n#|$)/i);
   if (oppMatch) {
@@ -410,10 +445,10 @@ function extractAlerts(reportText) {
       }
     });
   }
-
+ 
   return alerts;
 }
-
+ 
 // ─── RENDER ───────────────────────────────────────────────────────────────────
 function nowStr() {
   return new Date().toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' });
@@ -421,7 +456,7 @@ function nowStr() {
 function todayStr() {
   return new Date().toLocaleDateString('es-AR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 }
-
+ 
 function render() {
   const app = document.getElementById('app');
   app.innerHTML = `
@@ -437,7 +472,7 @@ function render() {
   bindEvents();
   if (S.tab === 'chat') scrollChatToBottom();
 }
-
+ 
 function renderHeader() {
   const tabs = [['dashboard','🏠'],['alertas','🔔'],['chat','💬'],['historial','🗂️']];
   return `
@@ -456,7 +491,7 @@ function renderHeader() {
       </nav>
     </header>`;
 }
-
+ 
 function renderApiKeyBanner() {
   if (S.apiKey) return `
     <div class="api-banner ok fade-in" style="margin-bottom:14px;">
@@ -470,7 +505,7 @@ function renderApiKeyBanner() {
         <button class="btn-sec btn-danger" id="btn-clear-key" style="padding:5px 10px;font-size:11px;">Cambiar</button>
       </div>
     </div>`;
-
+ 
   return `
     <div class="api-banner fade-in" style="margin-bottom:14px;">
       <div class="api-icon">🔑</div>
@@ -484,7 +519,7 @@ function renderApiKeyBanner() {
       </div>
     </div>`;
 }
-
+ 
 function renderDashboard() {
   if (S.reportLoading && !S.report) return `
     <div class="report-wrap fade-in">
@@ -495,7 +530,7 @@ function renderDashboard() {
         <p style="font-size:12px;">Cotizaciones · Merval · Bonos · CEDEARs · Tasas</p>
       </div>
     </div>`;
-
+ 
   if (S.report) return `
     <div>
       <div class="row" style="margin-bottom:14px;">
@@ -514,7 +549,7 @@ function renderDashboard() {
         <div class="report-body" id="report-content">${md(S.report)}${S.reportStreaming ? '<span class="cursor"></span>' : ''}</div>
       </div>
     </div>`;
-
+ 
   return `
     <div>
       <div class="hero">
@@ -545,7 +580,7 @@ function renderDashboard() {
         </div>` : ''}
     </div>`;
 }
-
+ 
 function renderAlertas() {
   const all = S.alerts;
   return `
@@ -572,7 +607,7 @@ function renderAlertas() {
         </div>`}
     </div>`;
 }
-
+ 
 function renderChat() {
   const hasContext = !!S.report;
   return `
@@ -597,7 +632,7 @@ function renderChat() {
       </div>
     </div>`;
 }
-
+ 
 function renderHistorial() {
   const items = S.history;
   return `
@@ -626,14 +661,14 @@ function renderHistorial() {
         </div>`}
     </div>`;
 }
-
+ 
 // ─── BIND EVENTS ─────────────────────────────────────────────────────────────
 function bindEvents() {
   // Tab navigation
   document.querySelectorAll('[data-tab]').forEach(btn => {
     btn.addEventListener('click', () => { S.tab = btn.dataset.tab; render(); });
   });
-
+ 
   // API Key
   const keyInput = document.getElementById('api-key-input');
   if (keyInput) {
@@ -646,7 +681,7 @@ function bindEvents() {
     localStorage.removeItem('iar_key');
     render();
   });
-
+ 
   // Dashboard
   document.getElementById('btn-analyze')?.addEventListener('click', generateReport);
   document.getElementById('btn-refresh')?.addEventListener('click', generateReport);
@@ -656,7 +691,7 @@ function bindEvents() {
     S.reportTs = S.history[0].time;
     render();
   });
-
+ 
   // Alertas
   document.getElementById('btn-clear-alerts')?.addEventListener('click', () => {
     S.alerts = []; localStorage.setItem('iar_alerts', '[]'); render();
@@ -668,7 +703,7 @@ function bindEvents() {
       render();
     });
   });
-
+ 
   // Chat
   const chatIn = document.getElementById('chat-input');
   if (chatIn) {
@@ -684,7 +719,7 @@ function bindEvents() {
       sendChat();
     });
   });
-
+ 
   // History toggle
   document.querySelectorAll('[data-toggle]').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -699,7 +734,7 @@ function bindEvents() {
     }
   });
 }
-
+ 
 function saveKey() {
   const val = (document.getElementById('api-key-input')?.value || S.apiKeyInput).trim();
   if (!val.startsWith('sk-')) {
@@ -710,14 +745,14 @@ function saveKey() {
   localStorage.setItem('iar_key', val);
   render();
 }
-
+ 
 // ─── GENERATE REPORT ─────────────────────────────────────────────────────────
 async function generateReport() {
   S.reportLoading = true;
   S.reportStreaming = true;
   S.report = '';
   render();
-
+ 
   try {
     const full = await streamClaude(
       [{ role: 'user', content: ANALYSIS_PROMPT() }],
@@ -727,24 +762,24 @@ async function generateReport() {
         if (el) el.innerHTML = md(chunk) + '<span class="cursor"></span>';
       }
     );
-
+ 
     S.report = full;
     S.reportTs = nowStr();
     S.reportStreaming = false;
     S.reportLoading = false;
-
+ 
     // Save to history
     const entry = { date: new Date().toLocaleDateString('es-AR'), time: nowStr(), content: full };
     S.history = [entry, ...S.history].slice(0, 30);
     localStorage.setItem('iar_history', JSON.stringify(S.history));
-
+ 
     // Extract and save alerts
     const newAlerts = extractAlerts(full);
     if (newAlerts.length) {
       S.alerts = [...newAlerts, ...S.alerts].slice(0, 50);
       localStorage.setItem('iar_alerts', JSON.stringify(S.alerts));
     }
-
+ 
     render();
   } catch (e) {
     S.reportLoading = false;
@@ -755,22 +790,22 @@ async function generateReport() {
     alert('⚠️ ' + msg);
   }
 }
-
+ 
 // ─── CHAT ─────────────────────────────────────────────────────────────────────
 async function sendChat() {
   const text = (document.getElementById('chat-input')?.value || S.chatInput).trim();
   if (!text || S.chatLoading || !S.apiKey) return;
-
+ 
   S.chatInput = '';
   S.chatMsgs.push({ role: 'user', content: text });
   S.chatMsgs.push({ role: 'ai', content: '', streaming: true });
   S.chatLoading = true;
   render();
-
+ 
   const context = S.report
     ? `Contexto — análisis del día:\n\n${S.report.slice(0, 3000)}\n\n---\n\nPregunta: ${text}`
     : text;
-
+ 
   try {
     await streamClaude(
       [{ role: 'user', content: context }],
@@ -790,18 +825,19 @@ async function sendChat() {
     S.chatMsgs[S.chatMsgs.length - 1].content = '❌ Error al conectar con la API.';
     S.chatMsgs[S.chatMsgs.length - 1].streaming = false;
   }
-
+ 
   S.chatLoading = false;
   render();
 }
-
+ 
 function scrollChatToBottom() {
   const el = document.getElementById('chat-msgs');
   if (el) el.scrollTop = el.scrollHeight;
 }
-
+ 
 // ─── INIT ─────────────────────────────────────────────────────────────────────
 render();
 </script>
 </body>
 </html>
+ 
